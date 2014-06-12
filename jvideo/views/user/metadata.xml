@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="User Profile">
+		<message>
+            <![CDATA[
+                Display the default user profile
+            ]]>
+        </message>
+	</view>
+</metadata>

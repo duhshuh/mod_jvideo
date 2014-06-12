@@ -1,0 +1,71 @@
+.jvideo-profile-edit {
+	padding: .5em;
+	line-height: 16px;
+
+	input, select, textarea {
+		width: 95%;
+		max-width: 20em;
+	}
+
+	table {
+		margin: 0 auto;
+		border: 0;
+
+		td {
+			border: 0;
+		}
+	}
+
+	.jvideo-input-birth-month {
+		width: 9em;
+	}
+
+	.jvideo-input-birth-day {
+		width: 5em;
+	}
+
+	.jvideo-input-birth-year {
+		width: 4em;
+	}
+
+	.jvideo-button-container {
+		padding-top: 1em;
+		text-align: center;
+	}
+
+	.jvideo-remove-profile-image-button {
+		margin-top: .5em;
+		font-size: .8em;
+	}
+
+	.jvideo-error {
+		color: #f55;
+		font-weight: bold;
+	}
+}
+
+.jvideo-profile-table {
+	padding: 0px;
+	margin: 0px;
+
+	th {
+		background-color: #ccc;
+		color: #666;
+		font-weight: bold;
+		font-size: 13px;
+		padding: 0px
+	}
+
+	tr {
+		vertical-align: top;
+		margin: 1px 0 1px 0;
+	}
+
+	td {
+		border: solid 1px #eaeaea;
+		text-align: left;
+		width: auto;
+		height: auto;
+		padding: .3em .5em;
+	}
+}

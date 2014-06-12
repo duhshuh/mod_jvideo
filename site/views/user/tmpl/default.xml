@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User Profile Layout">
+		<message>
+            <![CDATA[
+                Display the default user profile
+            ]]>
+		</message>
+	</layout>
+    <fields name="params">
+        <fieldset name="basic">
+			<field name="video_layout" type="list" default="grid" label="Layout" description="Style of video list layout">
+				<option value="grid">Grid View</option>
+				<option value="list">List View</option>
+			</field>
+			<field name="video_layout_columns" type="text" default="4" label="Columns (Grid only)" description="Number of columns for video layout" />
+			<field name="videos_per_page" type="text" default="12" label="Max Videos Per Page" description="Limit number of videos per page. 0 = user configurable limit" />
+		</fieldset>
+        <fieldset name="advanced">
+			<field name="show_thumbnail" type="radio" default="1" label="Thumbnail" description="Show/Hide the Video Thumbnail">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+			<field name="show_video_title" type="radio" default="1" label="Title" description="Show/Hide the Video Title">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+			<field name="show_video_description" type="radio" default="0" label="Description" description="Show/Hide the Video Description">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		<field name="show_video_rating" type="radio" default="1" label="User Rating" description="Show/Hide the User Rating">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		<field name="show_video_views" type="radio" default="1" label="View Count" description="Show/Hide the View Count">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		<field name="show_video_dateadded" type="radio" default="0" label="Date Added" description="Show/Hide the Date Added">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		<field name="show_video_duration" type="radio" default="1" label="Duration" description="Show/Hide the Duration">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		<field name="show_video_author" type="radio" default="1" label="Author" description="Show/Hide the Author">
+	 			<option value="0">Hide</option>
+	 			<option value="1">Show</option>
+	 		</field>
+	 		
+	 		<field name="@spacer" type="spacer" default="" label="" description="" />
+	 		
+	 		<field name="char_limit_title" type="text" default="32" label="Title Limit" description="Limit characters in video title (0 = no limit)" />
+			<field name="char_limit_description" type="text" default="0" label="Description Limit" description="Limit characters in video description (0 = no limit)" />
+            <field name="video_target_itemid" type="menuitem" label="Target Video Menu Item" description="Specify a target video menu item to associate with all videos within a gallery. Useful for maintaining module positions." />
+		</fieldset>
+	</fields>
+</metadata>

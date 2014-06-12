@@ -1,0 +1,106 @@
+.jvideo-watch {
+	.jvideo-title {
+		font-size: 2em;
+		line-height: 1.125em;
+	}
+
+	.jvideo-player {
+		margin: .5em 0;
+
+		.jvideo-player-container {
+			position: relative;	
+			background-color: #333;
+			height: 0;
+
+			&, &.aspect-16x9 {
+				padding-top: 56.25%;
+			}
+
+			&.aspect-4x3 {
+				padding-top: 75%;
+			}
+
+			.jvideo-error {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				text-align: center;
+				color: #f55;
+				padding: 1em;
+				font-weight: bold;
+			}
+
+			embed, object, video {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%
+			}
+		}
+	}
+	
+	.jvideo-social {
+		.addthis_toolbox {
+			float: right;
+		}
+	}
+
+	.jvideo-watch-info {
+		text-align: left;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		border-radius: .5em;
+		padding: 1em;
+		overflow: hidden;
+
+		.publish-video-expired {
+			color: red;
+			font-weight: bold;
+		}
+
+		.publish-video-published {
+			color: green;
+			font-weight: bold;
+		}
+
+		.publish-video-unpublished,
+		.publish-video-notapproved {
+			color: orange;
+			font-weight: bold;
+		}
+
+		.jvideo-views {
+			font-size: 1.2em;
+		}
+
+		.jvideo-embed {
+			padding: 7px 7px 7px 0;
+
+			input {
+				width: 95%;
+				background-color: #ddd;
+				border: 1px solid #ccc;
+				font-size: 10px;
+				height: 12px;
+				vertical-align: top;
+			}
+		}
+	}
+
+	.jvideo-rating {
+		font-size: 1.2em;
+		margin: 0 0 1em 0;
+
+		.jvideo-rating-stars {
+			* {
+				vertical-align: top;
+			}
+		}
+	}
+}

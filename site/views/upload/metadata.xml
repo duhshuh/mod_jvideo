@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Upload or Record" hidden="false">
+		<message>
+            <![CDATA[
+                Upload or record new videos
+            ]]>
+        </message>
+	</view>
+</metadata>

@@ -1,0 +1,86 @@
+@CHARSET "ISO-8859-1";
+
+@import "config";
+@import "edit-video";
+@import "icons";
+@import "install";
+
+.jvideo-wrapper {
+	margin: 0px auto 0px 0px;
+	vertical-align: top;
+	width: auto;
+}
+
+.jvideo-element {
+	background-color: transparent;
+	clear: left;
+	float: left;
+	margin: 4px 8px 8px 2px;
+	min-width: 150px;
+	white-space: nowrap;
+}
+
+.jvideo-element-right {
+	background-color: transparent;
+	clear: none;
+	float: left;
+	line-height: 150%;
+	margin: 3px 2px 8px 5px;
+}
+
+.jvideo-element2,
+.jvideo-element4 {
+	float: left;
+	margin: 0px 0px 12px 0px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.jvideo-element-container {
+	clear: left;
+	margin: 0px auto 0px 0px;
+	vertical-align: middle;
+	width: auto;
+
+	&.notice {
+		border: thin ridge #dddddd;
+		margin: 3px;
+		padding: 12px;
+		width: auto;
+	}
+
+	&.notice .header {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+}
+
+.jvideo-element2 input,
+.jvideo-element2 textarea {
+	width: 350px;
+}
+
+.jvideo-container {
+	margin: 0px;
+	padding: 0px;
+}
+
+.jvideo-title {
+	font-size: x-large;
+	font-weight: bold;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}

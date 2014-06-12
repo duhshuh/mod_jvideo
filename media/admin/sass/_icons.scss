@@ -1,0 +1,84 @@
+@import "compass/utilities/sprites";
+@import "icon-jvideo-16/*.png";
+@import "icon-jvideo-32/*.png";
+
+@include all-icon-jvideo-16-sprites;
+@include all-icon-jvideo-32-sprites;
+
+.com_jvideo {
+	[class^="icon-jvideo-16-"], [class*=" icon-jvideo-16-"] {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		vertical-align: middle;
+	}
+
+	.btn-small [class^="icon-jvideo-16-"], [class*=" icon-jvideo-16-"] {
+		margin-top: -2px;
+	}
+
+
+	[class^="icon-jvideo-32-"], [class*=" icon-jvideo-32-"] {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		vertical-align: middle;
+	}
+}
+
+/*
+.icon-48-jvideo {
+	background: url(../images/warp-logo.png) no-repeat left !important;
+	height: 50px !important;
+	margin-left: 0px !important;
+	padding-left: 192px !important;
+	padding-top: 3px !important;
+}
+
+.icon-48-configuration {
+	background: url(../images/icon_48x48_settings.png) no-repeat left;
+}
+
+.icon-48-featured_videos {
+	background: url(../images/icon_48x48_featured.png) no-repeat left;
+}
+
+.icon-48-categories {
+	background: no-repeat left;
+	background-image: url(../images/icon_48x48_categories.png) !important;
+}
+
+.icon-48-videos, .icon-48-generic {
+	background: url(../images/icon_48x48_movie.png) no-repeat left !important;
+}
+
+.icon-48-client_setup {
+	background: url(../images/icon_48x48_account.png) no-repeat left;
+}
+
+.icon-48-console {
+	background: url(../images/icon_48x48_console.png) no-repeat left;
+}
+
+.icon-48-help {
+	background: url(../images/icon_48x48_help.png) no-repeat left !important;
+}
+
+.icon-32-feature {
+	background: url(../images/icon_32x32_feature.png) no-repeat left;
+}
+
+.icon-32-unfeature {
+	background: url(../images/icon_32x32_unfeature.png) no-repeat left;
+}
+
+.icon-32-approve {
+	background: url(../images/icon_32x32_approve.png) no-repeat left;
+}
+
+.icon-32-unapprove {
+	background: url(../images/icon_32x32_unapprove.png) no-repeat left;
+}
+*/

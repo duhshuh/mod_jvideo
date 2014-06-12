@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Upload or Record Layout">
+		<message>
+            <![CDATA[
+                Display the interface for uploading or recording videos
+            ]]>
+		</message>
+	</layout>
+</metadata>

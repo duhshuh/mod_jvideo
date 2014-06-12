@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/3.0/component-install.dtd">
+<extension type="module" version="3.1" client="site"
+	method="upgrade"
+>
+	<name>mod_jvideo</name>
+	<creationDate>2012-03-08</creationDate>
+	<author>Warp</author>
+	<authorEmail>support@warphd.com</authorEmail>
+	<authorUrl>http://jvideo.warphd.com</authorUrl>
+	<copyright>Copyright 2008-2012 Warp</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.0.0b</version>
+	<description>JV_COM_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jvideo.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>jvideo.xml</filename>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>controllers</folder>
+		<folder>plugins</folder>
+		<folder>assets</folder>
+	</files>
+	<administration>
+		<menu view="jvideo" img="../media/com_jvideo/admin/images/icon_16x16.png">JV_MENU_MAIN</menu>
+		<submenu>
+			<menu view="videos" img="../media/com_jvideo/admin/images/icon_16x16_movie.png">JV_MENU_VIDEO_MANAGER</menu>
+			<menu view="categories" img="../media/com_jvideo/admin/images/icon_16x16_categories.png">JV_MENU_CATEGORY_MANAGER</menu>
+			<menu view="configuration" img="../media/com_jvideo/admin/images/icon_16x16_settings.png">JV_MENU_CONFIG</menu>
+			<menu view="console" img="../media/com_jvideo/admin/images/icon_16x16_console.png">JV_MENU_CONSOLE</menu>
+			<menu view="help" img="../media/com_jvideo/admin/images/icon_16x16_help.png">JV_MENU_SUPPORT</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>jvideo.php</filename>
+			<filename>import.php</filename>
+			<filename>LICENSE.txt</filename>
+			<folder>language</folder>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>library</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+	<media folder="media" destination="com_jvideo">
+		<folder>admin</folder>
+		<folder>site</folder>
+	</media>
+		<languages>
+		<language tag="en-GB">en-GB.mod_jvideo.ini</language>
+		<language tag="en-GB">en-GB.mod_jvideo.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_JVIDEO" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="count" type="text"
+					default="10"
+					label="MOD_JVIDEO_FIELD_COUNT_LABEL"
+					description="MOD_JVIDEO_FIELD_COUNT_DESC" />
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="cache_time" type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
+</extension>

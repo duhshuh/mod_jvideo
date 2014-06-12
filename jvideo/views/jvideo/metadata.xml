@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view hidden="true" title="Home">
+		<message>
+			<![CDATA[
+				Display JVideo frontpage
+			]]>
+		</message>
+	</view>
+</metadata>

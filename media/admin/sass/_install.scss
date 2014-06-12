@@ -1,0 +1,57 @@
+div.stepTaskContainer {
+	position: relative;
+}
+
+div.stepTask {
+	clear: left;
+	float: left;
+	margin: 2px;
+
+	div.description {
+		display: inline;
+		float: left;
+		font-weight: bold;
+		width: 150px;
+	}
+
+	div.divider {
+		display: inline;
+		float: left;
+	}
+
+	div.result {
+		display: inline;
+		float: left;
+	}
+
+	div.result.good {
+		color: #44b330;
+	}
+
+	div.result.bad {
+		color: #a62924;
+		font-weight: bold;
+	}
+}
+
+div.stepContinue {
+	clear: left;
+	float: left;
+	margin-left: 160px;
+	margin-top: 12px;
+
+	input {
+		background-color: #ffeebb;
+		background-image: url('../images/icon_16x16.png?install');
+		background-position: 6px 5px;
+		background-repeat: no-repeat;
+		color: #000;
+		font-size: larger;
+		padding: 3px 4px 3px 24px;
+	}
+
+	.timer {
+		color: #44b330;
+		font-weight: bold;
+	}
+}

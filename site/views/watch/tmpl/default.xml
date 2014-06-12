@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Watch Video Layout">
+		<message>
+            <![CDATA[
+                Link directly to a specific video by providing the video ID
+            ]]>
+        </message>
+	</layout>
+    <fields name="request">
+		<fieldset name="request">
+            <field name="id" type="text" default="" label="Video ID" description="" />
+			<field name="video_target_itemid" type="menuitem" label="Target Video Menu Item" description="Specify a target video menu item to associate with all videos within a gallery. Useful for maintaining module positions." />
+			<field name="profile_target_itemid" type="menuitem" label="Target Profile Menu Item" description="Specify a target profile menu item to associate with all authors within a gallery. Useful for maintaining module positions." />
+		</fieldset>
+	</fields>
+</metadata>

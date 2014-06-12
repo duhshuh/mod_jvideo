@@ -1,0 +1,12 @@
+.jvideo-play-overlay {
+	background-image: url('..' + image-url('play-overlay-120x90.png', true));
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.jvideo-thumb-container {
+	position: relative;
+	display: inline-block
+}

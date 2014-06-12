@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Video Gallery Layout">
+		<message>
+            <![CDATA[
+                Display a video gallery
+            ]]>
+		</message>
+	</layout>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="video_categories" type="categories" default="-1" label="Categories"
+                description="Select one or more videos categories (Ctrl + Click) to display in this video gallery." size="7"
+                addfieldpath="/administrator/components/com_jvideo/elements" />
+            <field name="video_order" type="list" default="newestvideos" label="Sort By" description="Sort videos in the gallery using one of these methods. If you are setting up a featured videos section, you can manage 'Featured Rank' via the JVideo back-end, and then you will need to filter by 'Featured Videos' (below) to limit the videos displayed in the gallery. This section only SORTS videos and does not limit what videos are displayed.">
+                <option value="newestvideos">Most Recently Added</option>
+                <option value="mostwatchedvideos">Most Watched</option>
+                <option value="toprated">Highest Rated</option>
+                <option value="alphabetical">Video Title (A-Z)</option>
+                <option value="featuredvideos">Featured Rank</option>
+            </field>
+            <field name="video_filter" type="list" default="published" label="Filter By" description="Filter videos displayed in your gallery using one of these methods. If you select 'No filter', all videos will be displayed (including pending and errored-out videos), so we recommend that you only use this option for building an administrator view.">
+                <option value="published">Published (default)</option>
+                <option value="featured">Featured Videos</option>
+                <option value="awaitingApproval">Awaiting Approval</option>
+                <option value="none">No filter</option>
+            </field>
+            <field name="video_layout" type="list" default="grid" label="Layout" description="Style of video gallery layout. Grid view uses tables to display videos in a tabular format, and list view uses DIV tags.">
+                <option value="grid">Grid View</option>
+                <option value="list">List View</option>
+            </field>
+            <field name="video_layout_columns" type="list" default="4" label="Columns (Grid only)" description="Number of columns for video layout">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </field>
+            <field name="videos_per_page" type="text" default="12" label="Max Videos Per Page" description="Limit number of videos per page. 0 = user configurable limit" />
+        </fieldset>
+        <fieldset name="advanced">
+            <field name="show_thumbnail" type="radio" default="1" label="Thumbnail" description="Show/Hide the Video Thumbnail">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_title" type="radio" default="1" label="Title" description="Show/Hide the Video Title">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_description" type="radio" default="0" label="Description" description="Show/Hide the Video Description">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_rating" type="radio" default="1" label="User Rating" description="Show/Hide the User Rating">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_views" type="radio" default="1" label="View Count" description="Show/Hide the View Count">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_dateadded" type="radio" default="1" label="Date Added" description="Show/Hide the Date Added">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_duration" type="radio" default="1" label="Duration" description="Show/Hide the Duration">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="show_video_author" type="radio" default="1" label="Author" description="Show/Hide the Author">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="char_limit_title" type="text" default="32" label="Title Limit" description="Limit characters in video title (0 = no limit)" />
+            <field name="char_limit_description" type="text" default="0" label="Description Limit" description="Limit characters in video description (0 = no limit)" />
+            <field name="video_target_itemid" type="menuitem" label="Target Video Menu Item" description="Specify a target video menu item to associate with all videos within a gallery. Useful for maintaining module positions." />
+            <field name="profile_target_itemid" type="menuitem" label="Target Profile Menu Item" description="Specify a target profile menu item to associate with all authors within a gallery. Useful for maintaining module positions." />
+        </fieldset>
+    </fields>
+</metadata>
